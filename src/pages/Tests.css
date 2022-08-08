@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+  .eshak {
+    border-right: 0 !important;
+  }
+  .photo {
+    background-image: none;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  color: black;
+  max-width: 1920px;
+  font-family: "Inter";
+}

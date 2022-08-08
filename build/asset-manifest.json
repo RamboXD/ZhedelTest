@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b5147db.css",
+    "main.js": "/static/js/main.bc52a70a.js",
+    "static/media/Altynsarin.jpg": "/static/media/Altynsarin.bef52d49c6ca3c762712.jpg",
+    "static/media/AUF.jpeg": "/static/media/AUF.45c4e5457ac1aee15810.jpeg",
+    "index.html": "/index.html",
+    "main.9b5147db.css.map": "/static/css/main.9b5147db.css.map",
+    "main.bc52a70a.js.map": "/static/js/main.bc52a70a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b5147db.css",
+    "static/js/main.bc52a70a.js"
+  ]
+}

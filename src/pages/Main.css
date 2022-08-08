@@ -1,0 +1,35 @@
+h2 {
+  font: 33px sans-serif bold;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.btn-main {
+  color: #40b6ac;
+  font-weight: 600;
+  padding: 15px;
+  width: 40vw;
+  border: 2px #40b6ac solid;
+  background-color: white;
+  font-size: 20px;
+  margin-bottom: 5vh;
+}
+
+.btn-main:hover {
+  background-color: #40b6ac;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  color: black;
+  max-width: 1920px;
+  font-family: "Inter";
+}
