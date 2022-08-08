@@ -22,7 +22,7 @@ const PublicTest = ({ previewTestId }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [opinion, setOpinion] = useState("");
-  const [showCorrect, setShowCorrect] = useState(true);
+  const [showCorrect, setShowCorrect] = useState(false);
   const id = previewTestId;
   const navigate = useNavigate();
   const [quizData, setQuizData] = useState({

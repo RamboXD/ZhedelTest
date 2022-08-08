@@ -4,6 +4,7 @@ import { Context } from "../index.js";
 import { authRoutes, publicRoutes } from "../routes.js";
 import { MAIN_ROUTE } from "../utils/consts.js";
 import oyuBlue from "../pics/oyuBlue.png";
+import "./AppRouter.css";
 
 const AppRouter = () => {
   const { user } = useContext(Context);
@@ -14,7 +15,6 @@ const AppRouter = () => {
       className="photo min-vh-100"
       style={{
         backgroundImage: `url(${oyuBlue})`,
-        // backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
         display: "flex",
         flexDirection: "column",
