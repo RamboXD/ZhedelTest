@@ -25,7 +25,7 @@ function MyQuiz({ quiz, setPreviewTestId }) {
         console.log(quiz._id);
         const data = await createGame(quiz._id, name);
         setClicked(true);
-        setLink("localhost:3000" + TESTILEU_ROUTE + `/${data._id}`);
+        setLink("https://zhedel-test.vercel.app" + TESTILEU_ROUTE + `/${data._id}`);
         // navigate(TESTILEU_ROUTE + `/${data._id}`);
       } catch (error) {
         console.log(error);
