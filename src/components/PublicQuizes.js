@@ -15,19 +15,31 @@ import { green } from "@mui/material/colors";
 import { Link, Typography } from "@mui/material";
 
 function PublicQuiz({ quiz, setPreviewTestId }) {
+  const user = JSON.parse(localStorage.getItem("profile"));
   const [clicked, setClicked] = useState(false);
   const [link, setLink] = useState();
+  const [likes, setLikes] = useState(quiz.likesCount.length);
+  console.log(`${user.id}`);
   const likeTest = async () => {
     try {
-      console.log(quiz._id);
-      const data = await likeQuiz(quiz._id);
-      console.log(data);
-      window.location.reload();
+      console.log(quiz.likesCount.indexOf(`${user.id}`));
+      if (quiz.likesCount.indexOf(`${user.id}`) > -1) {
+        setLikes(likes - 1);
+        quiz.likesCount.splice(quiz.likesCount.indexOf(`${user.id}`), 1);
+      } else {
+        quiz.likesCount.push(`${user.id}`);
+        setLikes(likes + 1);
+      }
+      console.log(quiz.likesCount);
+      await likeQuiz(quiz._id);
+      // console.log(data);
+      // window.location.reload();
     } catch (error) {
       console.log(error);
     }
   };
   const navigate = useNavigate();
+  // console.log(quiz);
   return (
     <Container
       style={{
@@ -89,7 +101,7 @@ function PublicQuiz({ quiz, setPreviewTestId }) {
                 fontSize=""
               />
             </Link>
-            <>{quiz.likesCount.length}</>
+            <>{likes}</>
           </div>
         </div>
       </Link>
